@@ -36,11 +36,14 @@ public class Main {
             } else {
                 System.out.println("Invalid Move");
             }
+
         }
+        scanner.close();
     }
 
     public static void printBoard(char[][] board) {
         for (char[] chars : board) {
+            System.out.print(" | ");
             for (char aChar : chars) {
                 System.out.print(aChar + " | ");
             }
